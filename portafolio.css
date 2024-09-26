@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Titulos';
+    src: url("Fonts/NovaMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Textos';
+    src: url("Fonts/GowunBatang-Bold.ttf");
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*Estilo para todo el body de la página web*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 1.3em; /* Establecemos la fuente base en tamaño relativo */
+}
+
+h2{
+    text-align: center;
+    font-family: 'Titulos';
+    font-size: 3em;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*Estilos para todo lo que este dentro de la cabecera*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 2%; /* Ajustamos el padding a un porcentaje del ancho de la pantalla */
+    background-color: #4fcdff;
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.1); /* Utilizamos porcentajes para la sombra */
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 2%; /* Ajustamos el margen izquierdo a un porcentaje */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilo de las secciones */
+section {
+    padding: 4%; /* Ajustamos el padding a un porcentaje del ancho de la pantalla */
+    /*margin-top: 6%; /* Espacio para evitar que el contenido se solape con el menú fijo */
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/*Estilos para todo lo relacionado con el home de la pagina web*/
+#home {
+    text-align: center;;
+}
+
+#nombre-intro {
+    color: #4fcdff;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000000;
+    overflow: hidden; /* Oculta el desbordamiento de las letras */
+    white-space: nowrap; /* Evita el salto de línea */
+    font-family: 'Titulos';
+}
+
+.imagen-home {
+    max-width: 50%;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Aqui estan todos los estilos necesarios y relacionados con el about me */
+.contenido-about-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.imagen-about-me img {
+    width: 100%;
+    max-width: 300px; /* Ajusta según sea necesario para hacer la imagen más grande */
+    border-radius: 5%;
+    border: solid 1px white;
+}
+
+.texto-about-me {
+    flex: 1;
+    padding: 0 4%;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Aqui estan todos los estilos necesarios y relacionados con skills*/
+.contenido-skills {
+    padding: 4%;
+    color: white;
+}
+
+.fila-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los íconos en la parte superior de su contenedor */
+    margin-bottom: 5%;
+}
+
+.icono-skills {
+    text-align: center;
+}
+
+.icono-skills i {
+    font-size: 800%; /* Ajusta el tamaño del ícono según sea necesario */
+}
+
+.nombre-tecnologia {
+    font-size: 100%; /* Ajusta el tamaño del texto según sea necesario */
+    margin-top: 5%; /* Ajusta el espacio entre el ícono y el texto según sea necesario */
+    color: black;
+    font-weight: bold;
+    /* Puedes agregar estilos adicionales aquí si es necesario */
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Aqui estan todos los estilos necesarios y relacionados con los proyectos*/
+
+#proyect {
+    display: flex;
+    flex-direction: column;
+}
+
+.proyecto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.proyecto-texto{
+
+    font-family: 'Textos';
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+img {
+    max-width: 40%;
+}
+
+.texto {
+    margin-left: 20px; /* Ajusta según sea necesario */
+}
+
+button {
+    margin-top: 10px; /* Ajusta según sea necesario */
+}
+
+/*Estilos para el boton*/
+.boton-proyecto {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000000;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #4fcdff;
+}
+
+.boton-proyecto:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #4fcdff;
+}
+
+.boton-proyecto:active {
+  transform: scale(0.9);
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Aqui estan todos los estilos necesarios y relacionados con el formulario de contacto*/
+#contacto {
+    text-align: center;
+}
+
+.formulario-contacto {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-input,
+.campo-textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.boton-enviar {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-family: 'Titulos';
+    font-size: 0.9em;
+}
+
+.boton-enviar:hover {
+    background-color: #4fcdff;
+    border: 1,2px solid black;
+    font-family: 'Titulos';
+}
+
+.titulo-formulario{
+    text-align: center;
+    font-family: 'Textos';
+}
+
+label{
+    font-family: 'Textos';
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Aqui estan todos los estilos necesarios y relacionados con descragar mi  CV*/
+.descargar-cv{
+    text-align: center;
+}
