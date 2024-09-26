@@ -1,0 +1,192 @@
+/* Fondo de la Pagina Web */
+*{
+    background-color: #FFD59F;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titulo de la pagina y logo */
+header div{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 30px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* Posicionamiento de los botones para cambiar el idioma */
+.idiomasPosi{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; /* Ajusta el espacio alrededor de los iconos según tu preferencia */
+}
+
+.idiomas{
+    width: 40px; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin-right: 5px; /* Ajusta el espacio entre los iconos según tu preferencia */
+    cursor: pointer;
+}
+
+/* Para el menu */
+ul{
+    list-style: none;
+    display: inline-block;
+    padding:18px;
+}
+
+li{
+    float: left;
+}
+
+/* Los estilos de los botones del menu */
+ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    border: solid 1px;
+    background-color: #D99948;
+}
+
+ul li a:hover{
+    background-color: #F5B041;
+}
+
+li a{
+    font-family: 'Arvo', serif;
+}
+
+/* Imagen de fondo de la pagina principal */
+.contenedor-principal{
+    margin-left: 30px;
+    display: flex;
+    text-align: center;
+}
+
+.parrafos-principla{
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+
+}
+
+/* La zona para la información */
+footer{
+    background-color: #D99948;
+    color: #fff; /* Color de texto en el footer */
+    /* padding: 20px; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Arvo', serif;
+    margin-top: 25px;
+    position: absolute;
+    
+}
+
+.ubicacion iframe{
+    height: 150px;
+    width: 200px;
+}
+
+footer p{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.fondoP{
+    background-color: #D99948;
+    font-weight: normal;
+}
+
+/* Pagina de Pasteleria el diseño para las imagenes */
+.pasteleria{
+    width: 220px;
+    height: 220px;
+    margin-left: 29px;
+    margin-top: 10%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 8px; 
+
+}
+
+/* Pagina de Bolleria el diseño para las imagenes */
+.bolleria{
+    width: 290px;
+    height: 290px;
+    margin-left: 29px;
+    margin-top: 10%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 8px; 
+
+}
+
+/* Pagina de Empanadas el diseño para las imagenes */
+.empanadas{
+    width: 290px;
+    height: 290px;
+    margin-left: 32px;
+    margin-top: 10%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 8px; 
+
+}
+
+/* Diversas etiquetas para las imagenes y textos de las paginas de muestra */
+
+.titulo-principal-postres{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Arvo', serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.contenedor {
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
+
+div p{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/*Pagian donde esta la imagen, la lista de ingredientes y la elaboracion*/
+.fotos{
+    width: 1000px;
+    height: 600px;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 30px;
+    border: solid 2px white;
+}
+
+.ingredientes-preparación{
+    margin-top: 15px;
+    margin-left: 30px;
+}
