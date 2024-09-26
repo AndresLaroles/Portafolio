@@ -1,0 +1,653 @@
+/* Estilo compartido para el cuerpo de toda la página */
+body {
+  font-family: Arial, sans-serif; /*establezco la fuente principal*/
+  margin: 0; /*hacemos reset del css para que no pasen cosas que no deseamos*/
+  padding: 0;
+  background-color: #c4e5f3;
+}
+
+/*Estilos para el logo*/
+.logo{
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 15%;
+  height: 15%;
+}
+
+/*Estilos relacionados con el menu de la pagina*/
+nav {
+  background-color: #2aa3c2; /*color del fondo del menu*/
+  padding: 1%; /*da espacion del contenido del menu*/
+  text-align: center; /*alineamos al centro el texto*/
+}
+
+nav ul {
+  list-style: none; /*quitamos los marcadores de la lista*/
+  margin: 0; /*reset del css de la lista*/
+  padding: 0;
+  display: inline-block; /*ponemos en linea los elementos de la lista*/
+}
+
+nav li {
+  display: inline-block; /*los elementos de la lista se ponen en linea*/
+  margin-right: 20px; /*separamos los elementos con margen a la derecha*/
+  position: relative; /*posicion relativa para los submenus*/
+}
+
+nav a {
+  text-decoration: none; /*elimina la decoración de subrayado de los enlaces*/
+  color: white;   /* establece el color del texto de los enlaces.*/
+  padding: 10px;  /*agrega relleno a los enlaces para que se vean mas navegables*/
+  display: block; 
+}
+
+nav a:hover {
+  /*Aplica estilos cuando el raton esta sobre el enlace*/
+  background-color: #1e829b; /*cambia a este color cuando el raton pasa por encima*/
+}
+
+/* Submenú */
+nav ul ul {
+  display: none; /*hace que no se vea de primeras el submenu*/
+  position: absolute; 
+  /*Coloco el submenu justo debajo y alineado a la izquierda del elemento padre.*/
+  top: 100%; 
+  left: 0;
+  background-color: #555;
+  border: 1px solid #333; /*agrega borde al submenu*/
+}
+
+nav li:hover > ul {
+  display: block; /*Muestra el submenu cuando se pasa el raton sobre el elemento de la lista.*/
+}
+
+nav ul ul li {
+  width: 100%; /*ancho de los elementos del submenu al 100%*/
+  display: block;
+}
+
+nav ul ul a {
+  padding: 10px 20px;
+}
+
+nav ul ul ul {
+  top: 0;
+  left: 100%;
+  border-top: 1px solid #333;
+}
+
+/* Texto en la imagen y estilos imagen principal de la página */
+/* index */
+.contenedor {
+
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  
+}
+
+.imagen {
+
+  width: 75%;
+  height: 50%;
+  border: solid 1px white ;
+  border-radius: 4%;
+}
+
+.texto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  color: rgb(0, 0, 0); /* Color del texto */
+  font-size: 24px; /* Tamaño de la letra */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Sombra para mejorar visibilidad del texto */
+  white-space: pre-line; /* Permite mantener los saltos de línea en el texto */
+}
+
+/*Estilos para el footer de la pagina */
+footer {
+  background-color: #2aa3c2;
+  color: #fff;
+  padding: 2%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.logo-footer img {
+  width: 30%; /* Puedes ajustar el tamaño según tus necesidades */
+  height: auto;
+}
+
+.info {
+  text-align: right;
+}
+
+/* Estilos para las imagenes de las aulas del centro */
+/* Aulas */
+.img-aulas {
+  max-width: 100%;
+  height: auto;
+  width: 33%; /* Puedes ajustar este porcentaje según tus necesidades */
+  display: block;
+  margin: 0 auto;
+}
+
+.container-aulas {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.espacio-aulas {
+  display: inline-block;
+  text-align: center;
+  margin: 0 1%; /* Ajusta este porcentaje según tus necesidades para el espacio entre bloques */
+}
+
+/* Estilos para las imagenes de la sinstaaklciones del centro */
+/* Instalaciones */
+.img-instalaciones{
+  width: 33%;
+  height: 33%;
+}
+
+/* Estos son los estilos para la historia del centro */
+/* Historia */
+.informacion {
+  max-width: 50%;
+  margin: 3% auto;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #2aa3c2;
+}
+
+.titulo-informacion{
+  color: #000000;
+  font-weight: bold;
+  
+}
+
+.contenido-informacion {
+  color: #000000;
+}
+
+/* Estilos para la pafgina de ubicacion del centro */
+/* Ubicacion */
+.ubi-texto {
+  color: #000000;
+  text-align: center;
+  margin-top: 4%;
+}
+
+.ubi-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.imagen-centro-aerea {
+  flex-grow: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 1%;
+}
+
+.imagen-centro-aerea img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mapa-contenedor {
+  flex-grow: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.ubi-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estilos para la informacion sobre la ESO y los bachileratos */
+/* ESO y Bachilelrato */
+.container-oferta-educativa {
+  max-width: 50%;
+  margin: 3% auto;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #2aa3c2;
+}
+
+.img-oferta-educativa{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+
+}
+
+.texto-oferta-educativa{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilos para las paginas de la admnistracion de nuestro instituto */
+.container-administración {
+  max-width: 50%;
+  margin: 3% auto;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #2aa3c2;
+}
+
+.texto-administracion{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Personal */
+.person-container {
+  margin-bottom: 20px;
+}
+.person-image {
+  width: 35%; /* Establecí un ancho del 20% del contenedor padre */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* Estilos para las paginas de orientacion */
+/* Continuar Estudiando */
+/* Estilos para el contenedor principal */
+.contenido-seguir-estudiando {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos para cada contenedor */
+.departamento, .continuar-estudiando {
+  max-width: 50%;
+  margin: 3% auto;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #2aa3c2;
+}
+
+/* Estilos para la información */
+.info-seguir-estudiando {
+  text-align: left;
+}
+
+
+/* Salidas profesionales */
+#salidasProfesionales {
+  max-width: 50%;
+  margin: 3% auto;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #2aa3c2;
+}
+
+/* Estilos para orientacion y sus departamentos */
+.contenedor-orientacion{
+  max-width: 50%;
+  margin: 3% auto;
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #2aa3c2;
+}
+
+/* Estilos para el formulario de registro a una aula virtual */
+/* Login a una plataforma online  */
+/* Mucha de la Informacion ha sido estraida de una pagina ext erna https://uiverse.io */
+.contenedor-login{
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 0.4em;
+  background-color: #2aa3c2;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid #2aa3c2;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #c4e5f3;
+  box-shadow: inset 2px 5px 10px #afcfff;
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #000000;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2.5em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #ffffff;
+  color: #2aa3c2;
+  margin-bottom: 5%;
+  border: solid 3px;
+}
+
+.button1:hover {
+  background-color: #2aa3c2;
+  color: white;
+}
+
+/* Estilos para la hora de la pagina de mostarr informacion de contacto */
+/* Informacion de contacto */
+.infoContacto-main{
+  margin-top: 5.6%;
+  margin-bottom: 8%;
+}
+
+.texto-contacto-info {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 4%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.contacto-info{
+  flex-grow: 1;
+  max-width: 33%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.contacto-info h2 {
+  color: #ffffff;
+  background-color: #2aa3c2;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+/* Mucha de la Informacion ha sido estraida de una pagina externa https://uiverse.io */
+/* Formulario de contacto */
+.contenedor-contacto{
+
+  text-align: center;
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 4%;
+  margin-top: 5.6%;
+  margin-bottom: 8%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+  background-color: #2aa3c2;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  
+}
+
+.texto-contacto{
+  text-align: center;
+  color: white;
+}
+
+.message {
+  color: #000000;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 95%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: #2aa3c2;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.input01 {
+  width: 95%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.form label .input01 + span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: #2aa3c2;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown + span {
+  top: 40px;
+  font-size: 0.9em;
+}
+
+.form label .input01:focus + span,.form label .input01:valid + span {
+  top: 50px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input01:valid + span {
+  color: green;
+}
+
+.fancy {
+  background-color: white;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 390;
+  letter-spacing: 2px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 8px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #2aa3c2;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #2aa3c2;
+  transform: translateX(30%);
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #2aa3c2;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #2aa3c2;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #2aa3c2;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: #2aa3c2;
+  background: #2aa3c2;
+}
+
+.fancy:hover::before {
+  width: 1.5rem;
+  background: #2aa3c2;
+}
+
+.fancy:hover .text {
+  color: #ffffff;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
