@@ -253,3 +253,9 @@ button {
 label{
     font-family: 'Textos';
 }
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* Aqui estan todos los estilos necesarios y relacionados con descragar mi  CV*/
+.descargar-cv{
+    text-align: center;
+}
